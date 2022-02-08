@@ -6,10 +6,10 @@
 ===========================
 [task_local]
 #京东通天塔--签到
-3 0 * * * jd_m_sign.js, tag=京东通天塔--签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+31 3,15 * * * jd_m_sign.js
  */
 
-const $ = new Env('京东通天塔--签到');
+const $ = new Env('京东通天签到');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
